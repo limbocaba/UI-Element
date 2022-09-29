@@ -1,15 +1,22 @@
+@import url('grid_12-825-55-15.css');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.6;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: #000;
 }
 
+
 h1 {
   color: #f4f4f4;
   text-align: center;
 }
+
+.logoPNG {
+  width:500px;
+}
+
 
 .char-container {
   display: flex;
@@ -30,6 +37,7 @@ background: #54ea0d;
 padding: 1em 2em;
 color: #fff;
 border: 0;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* Hover Effect */
 .button:hover {
@@ -93,3 +101,4 @@ border: 0;
   from{opacity: 0}
   to{opacity: 1}
 }
+
