@@ -32,9 +32,10 @@ function openModal(e, characters) {
   // change innerHTML of modalBody
   modalBody.innerHTML = `
     <p>Location: ${character.location.name}</p>
-    <p>Origin: ${character.origin.name}</p>
+    <p>Gender: ${character.gender}</p>
     <p>Species: ${character.species}</p>
   `
+  
   // change innerText of modalFooter
   modalFooter.innerText = character.status
   
