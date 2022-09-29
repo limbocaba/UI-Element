@@ -2,12 +2,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.6;
-  font-family: Wubba Lubba Dub Dub Font;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #000;
+}
+
+h1 {
+  color: #f4f4f4;
+  text-align: center;
 }
 
 .char-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 50px;
 }
 
 .card {
@@ -19,7 +26,7 @@ body {
 
 /* The Button itself */
 .button {
-background: coral;
+background: #54ea0d;
 padding: 1em 2em;
 color: #fff;
 border: 0;
