@@ -67,7 +67,7 @@ function displayCharacters(characters) {
     let html = `
       <div class="card">
         <img src="${character.image}" alt="${character.name}" >
-        <button class="button modalBtns" data-name="${character.name}">Click Here</button>
+        <button class="button modalBtns" data-name="${character.name}">Character Info</button>
       </div>
     `
 
