@@ -1,4 +1,4 @@
-@import url('grid_12-825-55-15.css');
+
 @font-face {
   font-family: face;
   src: url('WubbaLubbaDubDub.ttf');
@@ -45,6 +45,25 @@ border: 0;
 font-family: face;
 /* font-size: larger; */
 }
+
+.next {
+  color: green;
+  font-size: large;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: face;
+}
+
+.back {
+  color: green;
+  font-size: large;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: face;
+}
+
+
+
 /* Hover Effect */
 .button:hover {
   background: #333;
