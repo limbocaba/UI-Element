@@ -4,9 +4,11 @@ const charactersContainer = document.querySelector(".char-container")
 const modalHeader = document.querySelector("h2")
 const modalBody = document.querySelector(".modal-body")
 const modalFooter = document.querySelector("h3")
+const nextBtn = document.querySelector(".next")
 
 
 let modal = document.getElementById("simpleModal")
+let pageCount = 1
 
 // let modalBtn = document.getElementById("modalBtn")
 
@@ -18,7 +20,8 @@ let closeBtn = document.getElementsByClassName("closeBtn")[0];
 closeBtn.addEventListener('click', closeModal)
 // Listen for outside click
 window.addEventListener('click', clickOutside)
-
+// Listen fo next button click event
+nextBtn.addEventListener("click", () => fetchCharacters(`${url}?page=${pageCount}`))
 
 // function to open modal
 function openModal(e, characters) {
@@ -53,6 +56,7 @@ function clickOutside(e) {
 }
 
 function fetchCharacters(currentURL) {
+  pageCount++
   fetch(currentURL)
     .then(res => res.json())
     .then(data => {
@@ -63,6 +67,8 @@ function fetchCharacters(currentURL) {
 fetchCharacters(url)
 
 function displayCharacters(characters) {
+  charactersContainer.innerText = ""
+
   characters.forEach((character) => {
     let html = `
       <div class="card">
