@@ -1,9 +1,14 @@
 @import url('grid_12-825-55-15.css');
+@font-face {
+  font-family: face;
+  src: url('WubbaLubbaDubDub.ttf');
+}
 
 body {
   font-size: 17px;
   line-height: 1.6;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: face;
   background-color: #000;
 }
 
@@ -37,7 +42,8 @@ background: #54ea0d;
 padding: 1em 2em;
 color: #fff;
 border: 0;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family: face;
+/* font-size: larger; */
 }
 /* Hover Effect */
 .button:hover {
@@ -69,16 +75,16 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
 }
 .modal-footer {
-  background: coral;
+  background: #bfde44;
   padding: 10px;
-  color: white;
+  color: #41b4ca;
   text-align: center;
 }
 
 .modal-header{
-  background: coral;
+  background: #bfde44;
   padding: 15px;
-  color: #fff;
+  color: #41b4ca;
 }
 .modal-body {
   padding: 10px 20px;
