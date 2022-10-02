@@ -5,6 +5,7 @@ const modalHeader = document.querySelector("h2")
 const modalBody = document.querySelector(".modal-body")
 const modalFooter = document.querySelector("h3")
 const nextBtn = document.querySelector(".next")
+const backBtn = document.querySelector(".back")
 
 
 let modal = document.getElementById("simpleModal")
@@ -61,6 +62,7 @@ function fetchCharacters(currentURL) {
     .then(res => res.json())
     .then(data => {
       displayCharacters(data.results)
+      console.log('going forward')
     })
 }
 
@@ -85,4 +87,16 @@ function displayCharacters(characters) {
   modalBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => openModal(e, characters))
   })
+}
+
+backBtn.addEventListener('click', () => fetchCharactersBack(`${url}?page=${pageCount}`))
+
+function fetchCharactersBack(currentURL) {
+  pageCount--
+  fetch(currentURL)
+    .then(res => res.json())
+    .then(data => {
+      displayCharacters(data.results)
+      console.log('going back')
+    })
 }
