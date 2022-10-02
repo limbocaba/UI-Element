@@ -52,6 +52,7 @@ font-family: face;
   padding: 20px;
   border-radius: 20px;
   font-family: face;
+  float: right;
 }
 
 .back {
