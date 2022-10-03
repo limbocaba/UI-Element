@@ -8,4 +8,6 @@ This project included the use of mostly CSS to get the photos and buttons aligne
 
 This also needed the use of DOM Manipulation to access an API which is where all the information was accessed from.
 
+A custom font was used by dragging an installed file into VSCode and referencing it on top of the CSS file.
+
 This should work on all devices, please leave an issue if otherwise and it'll get resolved as soon as possible!
