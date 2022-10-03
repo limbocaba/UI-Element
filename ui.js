@@ -1,4 +1,3 @@
-// const url = 'https://vpic.nhtsa.dot.gov/api/'
 const url = 'https://rickandmortyapi.com/api/character'
 const charactersContainer = document.querySelector(".char-container")
 const modalHeader = document.querySelector("h2")
