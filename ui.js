@@ -10,12 +10,11 @@ const backBtn = document.querySelector(".back")
 let modal = document.getElementById("simpleModal")
 let pageCount = 1
 
-// let modalBtn = document.getElementById("modalBtn")
+
 
 let closeBtn = document.getElementsByClassName("closeBtn")[0];
 
 // Listen for open click
-// modalBtn.addEventListener('click', openModal)
 // Listen for close click
 closeBtn.addEventListener('click', closeModal)
 // Listen for outside click
@@ -54,7 +53,7 @@ function clickOutside(e) {
     modal.style.display = 'none';
 }
 }
-
+// Brings you to the next page
 function fetchCharacters(currentURL) {
   pageCount++
   fetch(currentURL)
@@ -66,7 +65,7 @@ function fetchCharacters(currentURL) {
 }
 
 fetchCharacters(url)
-
+// Function to display characters and open modals with info
 function displayCharacters(characters) {
   charactersContainer.innerText = ""
 
@@ -87,9 +86,10 @@ function displayCharacters(characters) {
     btn.addEventListener('click', (e) => openModal(e, characters))
   })
 }
-
+// Back button
 backBtn.addEventListener('click', () => fetchCharactersBack(`${url}?page=${pageCount}`))
 
+//Brings you to the last page
 function fetchCharactersBack(currentURL) {
   pageCount--
   fetch(currentURL)
